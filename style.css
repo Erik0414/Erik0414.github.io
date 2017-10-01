@@ -1,0 +1,162 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+
+html{
+	background-color: #b3ffe6;
+	height: 1700px;
+}
+
+body{
+    background: #f5f5f5;
+        color: #67727a;
+    font-family: 'Alegreya', sans-serif;
+    margin: 0;
+}
+p{
+	background-color: #e6fff7;
+	font-size: 40px;
+	font-family: 'Alegreya';
+}	
+header{
+	background: #6991AC;
+	width: 100%;
+	font-size: 20px;
+	height: 86px;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	width: 900px;
+	margin-bottom: -4px;	
+}
+#header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#logo {
+    margin: 20px;
+    float: left;
+    width: 248px;
+    height: 60px;
+    background: url(img/fooldal.png) no-repeat center;
+}
+
+/*--- navigáció--*/
+nav {
+    float: right;
+    padding: 25px 20px 0 0;
+}
+#menu-icon {
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: url(img/nav.png) center;
+}
+a:hover#menu-icon {
+    border-radius: 4px 4px 0 0;
+}
+ul {
+    list-style-type: none;
+    
+}
+nav ul li {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 150%;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #C3D7DF; 
+}
+.current {
+    color: #C3D7DF;
+}
+/*---navigáció vége--*/
+
+.banner {
+    widows: 100%;
+    background-color: #6991AC;
+}
+.banner-vakacio {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+article {
+	background-color: #b3ffe6;
+    float: left;
+    margin: 0 auto;
+    width: 50%;
+    height: 350px;
+}
+.orfu-wrapper{
+	background-color: #b3ffe6;
+    float: left;
+    width: 100%;
+}
+.orfu-wrapper a{
+	color: #4d4d4d;
+    text-decoration: none;
+}
+.orfu-wrapper a:hover{
+	color: #8c8c8c;
+}
+.oroshaza-wrapper{
+	background-color: #b3ffe6;
+    float: left;
+    width: 100%;
+}
+.oroshaza-wrapper a{
+	color: #4d4d4d;
+    text-decoration: none;
+}
+.oroshaza-wrapper a:hover{
+	color: #8c8c8c;
+}
+.bevezetes{
+		background-color: #b3ffe6;
+		border-bottom-width: 20px;
+		border-bottom-color: #00e699;
+		border-bottom-style: double;
+		float: left;
+		margin: 0 auto;
+}
+img { 
+  border: 5px #b3ffe6; 
+  border-radius: 10px 10px 10px 10px;
+} 
+img:hover { 
+  border: 5px solid black; 
+  border-radius: 10px 10px 10px 10px;
+} 
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+#gyoparos{
+	height: 98%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -42px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+	text-align:center;
+	height: 50px; 
+	width: 100%;
+	font-size: 30px;
+}
+.site-footer {
+  background: orange;
+}
