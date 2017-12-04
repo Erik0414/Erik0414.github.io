@@ -9,7 +9,7 @@
 
 
     // get location 
-        $url = json_decode(file_get_contents("http://api.ipinfodb.com/v3/ip-city/?key=/d0170cfa38a1508c089b84cd0c6d60cbcf753f99d57ca0af05ce2d775257f7e1/
+        $url = json_decode(file_get_contents("http://api.ipinfodb.com/v3/ip-city/?key=d0170cfa38a1508c089b84cd0c6d60cbcf753f99d57ca0af05ce2d775257f7e1
         // you can get your api key form http://ipinfodb.com/
         ip=".$_SERVER['REMOTE_ADDR']."&format=json"));
         $country=$url->countryName;  // user country
