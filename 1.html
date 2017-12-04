@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="hu"> 
-<?php    
-$file = fopen("index.php", "r+");   
-fputs($file, "<php //$_SERVER["REMOTE_ADDR"] connected $numday $month $year at $hour h $minutes ?>\n");   
-fclose($dest);   
-?>  
+	<script>// get user details
+        $user_agent = $_SERVER['HTTP_USER_AGENT']; //user browser
+        $ip_address = $_SERVER["REMOTE_ADDR"];     // user ip adderss
+        $page_name = $_SERVER["SCRIPT_NAME"];      // page the user looking
+        $query_string = $_SERVER["QUERY_STRING"];   // what query he used
+        $current_page = $page_name."?".$query_string; 
+    // get location 
+        $url = json_decode(file_get_contents("http://api.ipinfodb.com/v3/ip-city/?key=d0170cfa38a1508c089b84cd0c6d60cbcf753f99d57ca0af05ce2d775257f7e1")
+        // you can get your api key form http://ipinfodb.com/
+        ip=".$_SERVER['REMOTE_ADDR']."&format=json"));
+        $country=$url->countryName;  // user country
+        $city=$url->cityName;       // city
+        $region=$url->regionName;   // regoin
+        $latitude=$url->latitude;    //lat and lon
+        $longitude=$url->longitude;
+    // get time
+        date_default_timezone_set('UTC');
+        $date = date("Y-m-d");
+        $time = date("H:i:s");
+	</script>
 	<head>
 		<link rel="shortcut icon" href="img/erik0414.ico" type="image/x-icon" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
@@ -13,11 +28,9 @@ fclose($dest);
 		<link rel="stylesheet" type="text/css" href="1.css" />	
 		<link rel="shortcut icon" type="image/jpg" href="img/fooldal.png"/>
 	</head>
-
 <body>
 	<header>
 	<a href="1.html" id="logo"></a>
-	<a href="http://www.ip2location.com/?ipinfodb=4c81e8c82ea8b83835ffba34b31bb212" target="_blank"><img alt="IP Address Geolocation to Identify Website Visitor's Geographical Location" src="//www.ipinfodb.com/img/powered_by_ip2location2.jpg" /></a>
 		<nav>
 			<a href="#" id="menu-top"></a>
 			<ul>
@@ -52,11 +65,9 @@ fclose($dest);
   
       
 </div>
-
 <footer class="site-footer">
   <text> Erik0414<sup><i class="fa fa-copyright" > </i></sup> <strong>youtube</strong> </text>
 </footer>
 	
-
-
+<a href="http://www.ip2location.com/?ipinfodb=4c81e8c82ea8b83835ffba34b31bb212" target="_blank"><img alt="IP Address Geolocation to Identify Website Visitor's Geographical Location" src="//www.ipinfodb.com/img/powered_by_ip2location.jpg" /></a>
 </body>
