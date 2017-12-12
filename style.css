@@ -93,28 +93,27 @@ article {
     width: 50%;
     height: 350px;
 }
-.orfu-wrapper{
+.info-wrapper{
 	background-color: #b3ffe6;
     float: left;
     width: 100%;
 }
-.orfu-wrapper a{
+.info-wrapper a{
 	color: #4d4d4d;
     text-decoration: none;
 }
-.orfu-wrapper a:hover{
+.info-wrapper a:hover{
 	color: #8c8c8c;
 }
-.oroshaza-wrapper{
+.setup-wrapper{
 	background-color: #b3ffe6;
     float: left;
-    width: 100%;
 }
-.oroshaza-wrapper a{
+.setup-wrapper a{
 	color: #4d4d4d;
     text-decoration: none;
 }
-.oroshaza-wrapper a:hover{
+.setup-wrapper a:hover{
 	color: #8c8c8c;
 }
 .bevezetes{
@@ -140,9 +139,7 @@ img:hover {
 html, body {
   height: 100%;
 }
-#gyoparos{
-	height: 98%;
-}
+
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
