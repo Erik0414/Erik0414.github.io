@@ -108,6 +108,7 @@ article {
 .setup-wrapper{
 	background-color: #b3ffe6;
     float: left;
+    width: 100%;
 }
 .setup-wrapper a{
 	color: #4d4d4d;
